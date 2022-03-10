@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient color using Canvas</title>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="100" height="100"></canvas>
+    <script>
+      var canvas = document.getElementById("myCanvas");
+      var ctx = canvas.getContext("2d");
+
+      var grd = ctx.createLinearGradient(50, 50, 100, 0);
+      grd.addColorStop(0, "red");
+      grd.addColorStop(1, "White");
+      grd.addColorStop(0, "blue");
+
+      ctx.fillStyle = grd;
+      ctx.fillRect(10, 10, 150, 150);
+    </script>
+  </body>
+</html>
