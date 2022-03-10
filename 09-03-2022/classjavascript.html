@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .city{
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="city">london</h1>
+    <p>London is a capital of england</p>
+    <h1 class="city">Paris</h1>
+    <p>Paris is a capital of France</p>
+    <h1 class="city">Tokyo</h1>
+    <p>Tokyo is a capital of Japan</p>
+    <button onclick="myFunction()">Hide Element</button>
+    <button onclick="myFunction1()"> Show Element</button>
+    <script>
+        function myFunction (){
+           var x = document.getElementsByClassName('city');
+           for(let i=0; i<=x.length; i++){
+               x[i].style.display ="none";
+           }
+        }
+        function myFunction1(){
+            var y = document.getElementsByClassName('city');
+            for(let s=0; s<=y.lengthl; s++){
+                y[s].style.display="block";
+            }
+        }
+    </script>
+</body>
+</html>
