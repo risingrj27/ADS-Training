@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ol{
+padding-top: 15px;
+}
+
+ol li{
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+a{
+    text-decoration: none;
+    border: 2px solid red;
+    padding: 10px 10px;
+    color: rgb(230, 73, 73);
+}
+
+a:hover{
+    color: black;
+    background-color: rgb(243, 235, 122);
+    border: 2px solid blueviolet;
+}
+
+.nav{
+    background-color: aquamarine;
+    height: 200px;
+}

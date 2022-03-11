@@ -1,0 +1,9 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+table,th,td{
+    border: 2px solid black;
+}
+td{
+    vertical-align: bottom;
+}
