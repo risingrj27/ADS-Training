@@ -1,9 +1,19 @@
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-table,th,td{
-    border: 2px solid black;
+
+table{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
+
+table,th,td{
+    border: 2px double black;
+}
+
 td{
     vertical-align: bottom;
 }
+tr:nth-child(even) {background-color: #c7c6c6;}
