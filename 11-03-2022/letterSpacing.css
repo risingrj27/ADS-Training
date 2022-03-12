@@ -1,0 +1,26 @@
+* {
+  font-family: "Sofia", cursive;
+}
+
+.one {
+  letter-spacing: 2px;
+}
+.two {
+  letter-spacing: 5px;
+}
+.three {
+  letter-spacing: 8px;
+}
+.four {
+  letter-spacing: 10px;
+  font-family: "Dancing Script", cursive;
+}
+.five {
+  word-spacing: -2px;
+}
+.six {
+  font-variant: normal;
+}
+.seven {
+  font-variant: small-caps;
+}

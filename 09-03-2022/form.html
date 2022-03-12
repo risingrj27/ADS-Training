@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      fieldset {
+        padding: 30px 50px;
+      }
+      .form_first {
+        /* padding: 40px; */
+        margin: auto;
+        /* border: 2px solid blue; */
+        width: 12%;
+      }
+      div {
+        margin-bottom: 10px;
+      }
+      .btn, button {
+        padding: 10px 15px;
+        background-color: rgb(32, 148, 9);
+        border: 2px solid rgb(17, 17, 10);
+        border-radius: 10px;
+        box-shadow: 2px 6px 6px;
+        font-size: 1rem;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="form_first" action="#" autocomplete="off">
+      <fieldset>
+        <legend>My Form</legend>
+        <div>
+          <label for="fanme">First Name</label>
+          <input
+            type="text"
+            value=""
+            name="fanme"
+            id="fanme"
+            onchange="onchangehandler('fanme')"
+          />
+        </div>
+        <div>
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            name="lname"
+            value=""
+            id="lname"
+            onchange="onchangehandler('lname')"
+          />
+        </div>
+        <div>
+          <label>Gender</label>
+          <input type="radio" id="" name="Gender" value="Male" /><label
+            for="male"
+            >Male</label
+          >
+          <input type="radio" id="" name="Gender" value="Female" />
+          <label for="female">Female</label>
+        </div>
+        <div>
+          <label>Drop Down & Multi Select</label>
+          <select id="cars" name="cars" size="3" multiple>
+            <option></option>
+            <option value="america">America</option>
+            <option value="Canada">Canada</option>
+            <option value="NewYork">New York</option>
+            <option value="Germany">Germany</option>
+            <option value="usa">USA</option>
+          </select>
+        </div>
+        <div>
+          <label>Write Something</label>
+          <textarea name="message" rows="10" cols="22"></textarea>
+        </div>
+        <div>
+          <input type="checkbox" value="bike" name="bike" />
+          <label for="bike">I Have a bike</label><br />
+
+          <input type="checkbox" name="car" value="car" />
+          <label for="car">I have a Car</label><br />
+
+          <input type="checkbox" name="boat" value="boat" />
+          <label for="boat">I have a boat</label><br />
+
+          <input type="checkbox" name="aeroplane" value="aeroplane" />
+          <label for="aeroplane">I have a aeroplane</label>
+        </div>
+        <div>
+          <label>Which Browser you use</label>
+          <input list="browsers" />
+          <datalist id="browsers">
+            <option value="Firefox"></option>
+            <option value="Google Chrome"></option>
+            <option value="Internet Explorer"></option>
+            <option value="Tor Browser"></option>
+            <option value="Opera Mini"></option>
+          </datalist>
+        </div>
+        <div>
+          <input
+            type="range"
+            name="rangeInput"
+            min="0"
+            max="100"
+            value="0"
+            oninput="this.form.rangeValue.value=this.value"
+          />
+          <input
+            type="number"
+            name="rangeValue"
+            value="0"
+            oninput="this.form.rangeInput.value=this.value"
+          />
+        </div>
+        <div>
+          <label>Check value </label>
+          <input
+            type="color"
+            name="colors"
+            oninput="this.form.colorValue.value=this.value"
+          />
+          <input
+            type="text"
+            name="colorValue"
+            oninput="this.form.colors.value=this.value"
+          />
+        </div>
+        <button type="button" onclick="alert('Data Submitted')">Submit</button>
+        <input class="btn" type="reset" >
+      </fieldset>
+    </form>
+
+    <script>
+      function changeHandler(val) {
+        document.getElementById("rangeValue").value = val;
+      }
+
+      let obj = {};
+      function buttonHandler() {
+        console.log(obj);
+      }
+
+      function onchangehandler(field) {
+        obj[field] = document.getElementById(field).value;
+      }
+    </script>
+  </body>
+</html>

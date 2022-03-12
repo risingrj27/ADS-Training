@@ -1,0 +1,31 @@
+p a{
+    text-decoration: none;
+    padding: 10px 25px;
+    background-color: tomato;
+    text-decoration-line: none;
+    color: black;
+    border-radius: 20px;
+}
+a:hover{
+    color: aliceblue;
+    background-color: rgb(129, 32, 32);
+    text-decoration: underline;
+}
+a:visited{
+    color: rgb(255, 123, 0);
+    background-color: rgb(49, 238, 106);
+}
+.secondBtn{
+    padding: 10px 25px;
+    border: 2px solid blue;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+.thirdBtn{
+    padding: 10px 25px;
+    border: 2px solid red;
+    text-decoration: none;
+    text-decoration-line: none;
+    cursor:wait;
+}
