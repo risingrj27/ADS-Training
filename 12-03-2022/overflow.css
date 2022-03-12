@@ -1,0 +1,26 @@
+div {
+  width: 70%;
+  height: 50px;
+  border: 2px solid blue;
+  display: inline-block;
+}
+
+.one {
+  overflow: hidden;
+}
+
+.two {
+  overflow: scroll;
+}
+
+.three {
+  overflow: visible;
+}
+
+.four {
+  overflow: auto;
+}
+
+.five {
+  overflow: inherit;
+}

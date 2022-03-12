@@ -1,0 +1,29 @@
+#main div{
+    display: inline;
+    margin: 0px 20px;
+}
+
+div img{
+    width: 30%;
+    height: 200px;
+}
+
+.one img{
+    position:fixed;
+}
+
+.two img{
+    /* position:relative/; */
+}
+
+.three img{
+    position:static;
+}
+
+.four img{
+    position:sticky;
+}
+
+.five img{
+    position:inherit;
+}
