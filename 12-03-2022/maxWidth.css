@@ -1,0 +1,35 @@
+#myDiv{
+    display: inline-block;
+}
+
+.one {
+  max-width: 600px;
+  height: 200px;
+  border: 2px solid blue;
+}
+
+.two {
+  max-width: 700px;
+  height: 200px;
+  border: 2px solid blue;
+}
+.three {
+  max-width: 800px;
+  height: 200px;
+  border: 2px solid blue;
+}
+.four {
+  max-width: 900px;
+  height: 200px;
+  border: 2px solid blue;
+}
+.five {
+  width: 700px;
+  height: 200px;
+  border: 2px solid tomato;
+}
+.six{
+    min-width: 700px;
+    height: 200px;
+    border: 2px solid orange;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <link rel="stylesheet" href="./display.css">
+</head>
+<body>
+    <button  onclick="hideHandler()">Click Me</button>
+    <button onclick="changeSize()">Change Size</button>
+    <div id="myDiv">
+        <ul >
+            <li>HOME</li>
+            <li>PRODUCTS</li>
+            <li>CONTACT US</li>
+            <li>ABOUT US</li>
+            <li>CAREER</li>
+        </ul>
+    </div>
+    
+    <script>
+        function hideHandler(){
+            var x = document.getElementById('myDiv');
+            if(x.style.display === 'none'){
+                x.style.display = 'block';
+            }else {
+                x.style.display ='none';
+            }
+        }
+    </script>
+</body>
+</html>
