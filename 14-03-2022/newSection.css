@@ -1,0 +1,41 @@
+.leftColumn{
+    float: left;
+    width: 75%;
+    /* height: 300px; */
+    /* border: 2px solid red; */
+}
+.rightColumn{
+    float: right;
+    width: 25%;
+    /* height: 300px; */
+    /* border: 2px solid blue; */
+}
+
+.card{
+    background-color: white;
+    padding: 20px;
+    margin:10px 5px 0px 0px;
+    background-color: #aaa;
+    /* border: 1px solid tomato; */
+    height: 300px;
+}
+
+.image{
+    background-color: #aaa;
+    width: 100%;
+    padding: 8px 2px;
+    border: 1px solid blue;
+}
+
+.row::after{
+    content: ""; 
+    display: table;
+    clear: both;
+}
+
+.footer{
+    padding: 20px;
+    margin: 10px 0px 0px 0px;
+    text-align:center;
+    background: rgb(73, 70, 70);
+}
