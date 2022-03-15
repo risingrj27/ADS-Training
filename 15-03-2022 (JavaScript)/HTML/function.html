@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function </title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        // var fahrenheit = 99;
+        var y = prompt(); 
+        var x;
+        function coverter(fahrenheit){
+            x = 5/9 * (fahrenheit-32)  ;
+            console.log()
+
+            return x.toFixed(2);
+        }
+          
+         document.getElementById('demo').innerHTML ="Celsius = "+ coverter(y) + " fahrenheit = " + y;
+    </script>
+</body>
+</html>

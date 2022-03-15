@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in java script</title>
+</head>
+<body>
+    <p id="demo">My Car Name</p>
+    <button onclick="carHanlder()">show my car name</button>
+    <script>
+        var myCar='volvo';
+        function carHanlder() {
+            if(true){
+                document.getElementById('demo').innerHTML = myCar;
+                console.log("car name");
+            }else {
+                document.getElementById('demo').innerHTML = "NOt a car name";
+            }
+        }
+    </script>
+</body>
+</html>
