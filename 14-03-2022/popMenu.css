@@ -9,15 +9,6 @@
     color: rgb(0, 0, 0);
 }
 
-.form1{
-    /* padding: 30px; */
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-content: space-evenly; */
-    /* flex-direction:column; */
-   
-}
-
 form{
     display: flex;
     flex-direction: column;
