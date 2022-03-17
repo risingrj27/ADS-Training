@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function calcAverge(score){
+        //     const avg = score /3;
+        //     return avg
+        // }
+
+        // function checkWinner(score1,score2,score3){
+        //     const calScore = score1+score2+score3;
+        //     const dophinScore = calcAverge(calScore);
+        //     const koalasScore = calcAverge(calScore);
+        //     if(dophinScore > koalasScore + koalasScore || koalasScore > dophinScore+ dophinScore){
+        //         console.log(`dophin Score ${dophinScore} koalas Score${koalasScore}`)
+        //         return console.log("You Wins ")
+        //     }else {
+        //         console.log(`dophin Score${dophinScore} koalas Score${koalasScore}`)
+        //         return console.log('you cant win');
+        //     }
+        // }
+
+        // console.log(checkWinner(44,23,71));
+        // console.log(checkWinner(65,54,49));
+
+        const calcAverge = (a,b,c) => (a+b+c)/3
+
+        const dolphinAvg = calcAverge(44,23,71);
+        console.log(dolphinAvg);
+        const koalasAvg = calcAverge(65,54,49);
+        console.log(koalasAvg);
+        function checkWinner (dolpinScore , koalasScore){
+            if(dolpinScore >= 2*koalasScore){
+                return console.log(`Dolphin Score ${dolpinScore} You won`);
+            }else if(koalasScore >= 2*dolpinScore){
+                return console.log(`koalas Score ${koalasScore} you won`);
+            }else{
+                console.log("no one wins")
+            }
+        }
+
+        checkWinner(dolphinAvg,koalasAvg);
+        const avg1 = calcAverge(1,2,3);
+        const avg2 = calcAverge(4,5,6)
+        checkWinner(avg1, avg2);
+        // checkWinner(576,111);
+    </script>
+</body>
+</html>

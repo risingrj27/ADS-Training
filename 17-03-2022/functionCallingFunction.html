@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fruitCut(fruit){
+            return fruit*4;
+        }
+
+        function fruitProcessor(apple , orange){
+            const applePiece = fruitCut(apple);
+            const orangePiece = fruitCut(orange);
+
+            return `juice with ${applePiece} piece of apple and ${orangePiece} piece of orange`;
+        }
+
+        console.log(fruitProcessor(2,3))
+    </script>
+</body>
+</html>

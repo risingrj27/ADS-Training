@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let tip = 275;
+
+      tip > 50 && tip < 300
+        ? console.log(
+            `bill value${tip} tip  ${(15 / 100) * tip} total ${
+              tip + (15 / 100) * tip
+            }`
+          )
+        : console.log(
+            `bill value ${tip} tip  ${(15 / 100) * tip} total ${
+              tip + (15 / 100) * tip
+            }`
+          );
+    </script>
+  </body>
+</html>
