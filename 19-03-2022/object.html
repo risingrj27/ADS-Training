@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const jonas = {
+        firstName: "ritesh",
+        lastName: "kumar",
+        birthdayYear: "1993",
+        location: "hisar",
+        driverLicense : true,
+        calcAge: function () {
+          // console.log(this)
+          return 2037 - this.birthdayYear;
+        },
+        getSummary: function () {
+          return `${this.firstName} is a ${
+            this.calcAge()
+          }-year old and he has ${
+            this.driverLicense ? "a" : "no"
+          } driver's license`;
+        },
+      };
+
+      console.log(jonas.getSummary())
+    </script>
+  </body>
+</html>
